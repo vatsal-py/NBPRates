@@ -12,7 +12,7 @@ import java.io.IOException;
 @RestController
 public class NBPController {
     NBPServices services=new NBPServices();
-    @GetMapping("")
+    @GetMapping("/api/gold-price/avarage")
     public double goldPrice () throws IOException {
         double sum = 0;
         Gold[] gold = services.getGoldPrice();
